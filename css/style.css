@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+#our {
+    padding: 3rem 0;
+}
+
+#our .top-text {
+    text-align: center;
+    line-height: 2rem;
+}
+
+#our .boxes .box {
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+    width: 30%;
+    margin: 25px 15px;
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+}
+
+#our .boxes .box .img-text {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    top: 70%;
+    left: 5%;
+    z-index: 5;
+    overflow: hidden;
+    line-height: 30px;
+    transform: translateY(80px);
+    transition: 0.3s ease-in-out;
+}
+#our .boxes .box:hover .img-text{
+    transform: translateY(0px);
+
+}
+
+#our .boxes .box img {
+    width: 100%;
+    transform: scale(1);
+    height: 100%;
+    transition: 0.3s ease-in-out;
+
+}
+#our .boxes .box .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(195, 34, 187, 0.712) 0%, rgba(243,150,255,0.10669270149466037) 100%);
+}
+#our .boxes .box:hover .overlay{
+    opacity: 1;
+}
+#our .boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#our .boxes .box:hover {
+    transform: scale(1.01);
+}
+
+#our .boxes .box img:hover {
+    transform: scale(1.09);
+}
+#our .boxes .box .img-text h2{
+letter-spacing: 10px;
+font-style: italic;
+}
+#our .boxes a{
+    border: 1px solid white;
+    padding: 10px 15px;
+    margin-top: 20px;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
